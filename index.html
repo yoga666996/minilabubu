@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3BD18CVXY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y3BD18CVXY');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI LABUBU - Official Collection | labubumini.org</title>
+    <meta name="description" content="Official LABUBU MINI collection website. Discover the newest Heart Code series, exclusive figures, and complete character guides from POP MART's beloved tiny monsters.">
+    <meta name="keywords" content="">
+    <meta name="author" content="minilabubu.pro">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labubumini.org/">
+    <meta property="og:title" content="MINI LABUBU - Official Collection">
+    <meta property="og:description" content="Official LABUBU MINI collection with Heart Code series, exclusive figures and complete character guides.">
+    <meta property="og:image" content="https://labubumini.org/images/labubu-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://labubumini.org/">
+    <meta property="twitter:title" content="MINI LABUBU - Official Collection">
+    <meta property="twitter:description" content="Official LABUBU MINI collection with Heart Code series and exclusive figures.">
+    <meta property="twitter:image" content="https://labubumini.org/images/labubu-og.jpg">
+
+    <link rel="canonical" href="https://labubumini.org/">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="critical.js" as="script">
+    <link rel="preload" href="minilabubu1.webp" as="image" type="image/webp">
+    <link rel="preload" href="minilabubu2.webp" as="image" type="image/webp">
+    <link rel="preload" href="minilabubu3.webp" as="image" type="image/webp">
+    
+    <!-- Font preload with font-display swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap"></noscript>
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    
+    <!-- Performance hints -->
+    <meta name="theme-color" content="#F4A6CD">
+    <meta name="msapplication-TileColor" content="#F4A6CD">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="MINI LABUBU">
+    
+    <!-- Critical resource hints -->
+    <link rel="prefetch" href="labubumini1.webp">
+    <link rel="prefetch" href="labubumini2.webp">
+    <link rel="prefetch" href="labubumini3.webp">
+    <link rel="prefetch" href="labubumini4.webp">
+    
+    <!-- Critical CSS inlined for immediate rendering -->
+    <style>
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Critical Navigation Styles */
+        .navbar { position: fixed; top: 0; width: 100%; background: #F4A6CD; z-index: 1000; padding: 1rem 0; box-shadow: 0 2px 10px rgba(244, 166, 205, 0.3); transition: all 0.3s ease; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { display: flex; align-items: center; font-size: 1.8rem; font-weight: 700; }
+        .logo-text { color: #E91E63; font-family: 'Fredoka One', cursive; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(233, 30, 99, 0.3); }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-link { text-decoration: none; color: #2C2C2C; font-weight: 600; transition: all 0.3s ease; position: relative; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; }
+        .nav-link.highlight { background: linear-gradient(135deg, #ff6b6b, #feca57); color: white !important; padding: 0.5rem 1rem; border-radius: 25px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        /* Progress Bar */
+        .progress-bar { position: fixed; top: 0; left: 0; width: 0%; height: 4px; background: linear-gradient(45deg, #667eea, #764ba2); z-index: 1001; transition: width 0.1s ease; }
+        
+        /* Critical All Series Section */
+        .all-series { padding: 120px 0 80px; background: #f8f8f8; min-height: 100vh; }
+        .series-header { text-align: left; margin-bottom: 3rem; padding-left: 1rem; }
+        .series-title { font-size: 3rem; font-weight: 700; color: #2C2C2C; margin: 0; font-family: 'Fredoka One', cursive; }
+        .series-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 0 1rem; }
+        .series-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; cursor: pointer; }
+        .series-image { position: relative; height: 250px; overflow: hidden; }
+        .series-img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s ease; border-radius: 15px 15px 0 0; }
+        .series-img.lazy { filter: blur(2px); }
+        
+        /* Mobile hamburger */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 3px; }
+        .bar { width: 25px; height: 3px; background: #333; transition: 0.3s; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-menu { position: fixed; left: -100%; top: 70px; flex-direction: column; background-color: white; width: 100%; text-align: center; transition: 0.3s; box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); padding: 2rem 0; }
+            .nav-menu.active { left: 0; }
+            .series-title { font-size: 2.5rem; }
+            .series-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Font loading optimization - handled by Google Fonts */
+    </style>
+    
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap" rel="stylesheet" media="print" onload="this.media='all'"
+          style="font-display: swap;">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MINILABUBU</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/new/" class="nav-link highlight">NEW - WILD BUT CUTIE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/figures/" class="nav-link">FIGURES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/series/" class="nav-link dropdown-toggle">SERIES <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/series/heart-code/">Heart Code</a></li>
+                        <li><a href="/series/classic/">Classic</a></li>
+                        <li><a href="/series/seasonal/">Seasonal</a></li>
+                        <li><a href="/series/collaborations/">Collaborations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/blog/" class="nav-link dropdown-toggle">BLOG <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/blog/news/">Latest News</a></li>
+                        <li><a href="/blog/unboxing/">Unboxing</a></li>
+                        <li><a href="/blog/collecting-tips/">Collecting Tips</a></li>
+                        <li><a href="/blog/celebrity-style/">Celebrity Style</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/other-worlds/" class="nav-link dropdown-toggle">OTHER WORLDS <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/other-worlds/pop-mart/">POP MART</a></li>
+                        <li><a href="/other-worlds/community/">Community</a></li>
+                        <li><a href="/other-worlds/trading/">Trading</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- All Series Section -->
+    <section id="all-series" class="all-series">
+        <div class="container">
+            <div class="series-header">
+                <h1 class="series-title">All Series</h1>
+            </div>
+            
+            <div class="series-grid">
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="minilabubu1.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="minilabubu1.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="minilabubu2.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="minilabubu2.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="minilabubu3.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="minilabubu3.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="labubumini1.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="labubumini1.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="labubumini2.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="labubumini2.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="minilabubu.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="minilabubu.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="labubumini.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="labubumini.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="labubumini3.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="labubumini3.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="series-card">
+                    <div class="series-image">
+                        <picture>
+                        <source srcset="labubumini4.webp" type="image/webp">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 680'%3E%3Crect width='510' height='680' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                             data-src="labubumini4.png" 
+                             alt="minilabubu Heart Code series collectible figure" 
+                             class="series-img lazy" 
+                             width="510" 
+                             height="680" 
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
+                        <div class="series-overlay">
+                            <h3>minilabubu</h3>
+                            <p>minilabubu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collection-stats">
+                <div class="stat">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Unique Characters</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Rarity Levels</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Authentic</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">48h</div>
+                    <div class="stat-label">Fast Shipping</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="characters">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet the Labubu Universe</h2>
+                <p class="section-subtitle">Each character has their own unique story and magical powers</p>
+            </div>
+
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar">🧸</div>
+                    <h3 class="character-name">Classic Labubu</h3>
+                    <p class="character-bio">The original mischievous little monster who started it all. Known for playful pranks and endless charm.</p>
+                    <div class="character-traits">
+                        <span class="trait">Playful</span>
+                        <span class="trait">Original</span>
+                        <span class="trait">Mischievous</span>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">💖</div>
+                    <h3 class="character-name">Love Labubu</h3>
+                    <p class="character-bio">Spreads love and happiness wherever she goes. Her heart-shaped accessories bring joy to everyone around.</p>
+                    <div class="character-traits">
+                        <span class="trait">Loving</span>
+                        <span class="trait">Kind</span>
+                        <span class="trait">Joyful</span>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">🌟</div>
+                    <h3 class="character-name">Star Labubu</h3>
+                    <p class="character-bio">The dreamer of the group, always reaching for the stars. Brings magic and wonder to everyday moments.</p>
+                    <div class="character-traits">
+                        <span class="trait">Dreamy</span>
+                        <span class="trait">Magical</span>
+                        <span class="trait">Inspiring</span>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">🎀</div>
+                    <h3 class="character-name">Ribbon Labubu</h3>
+                    <p class="character-bio">The fashionista with an eye for style. Her ribbon collection is the envy of all other Labubus.</p>
+                    <div class="character-traits">
+                        <span class="trait">Stylish</span>
+                        <span class="trait">Creative</span>
+                        <span class="trait">Trendy</span>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">🌙</div>
+                    <h3 class="character-name">Moon Labubu</h3>
+                    <p class="character-bio">The night guardian who watches over dreams. Protects sleepers and brings peaceful nights.</p>
+                    <div class="character-traits">
+                        <span class="trait">Peaceful</span>
+                        <span class="trait">Protective</span>
+                        <span class="trait">Mysterious</span>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">🍭</div>
+                    <h3 class="character-name">Sweet Labubu</h3>
+                    <p class="character-bio">The candy lover with an endless sweet tooth. Makes everything taste better with magical sweetness.</p>
+                    <div class="character-traits">
+                        <span class="trait">Sweet</span>
+                        <span class="trait">Energetic</span>
+                        <span class="trait">Cheerful</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Information -->
+    <section id="releases" class="releases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Release Information</h2>
+                <p class="section-subtitle">Stay updated with the newest Mini Labubu collections and exclusive launches</p>
+            </div>
+
+            <div class="release-highlight">
+                <div class="release-content">
+                    <div class="release-badge">🚀 New Launch</div>
+                    <h3 class="release-title">The Monsters Pin for Love Series</h3>
+                    <p class="release-description">
+                        The highly anticipated new collection featuring exclusive Mini Labubu designs with love-themed accessories. 
+                        Each doll comes with special pin attachments and limited edition packaging.
+                    </p>
+                    
+                    <div class="release-details">
+                        <div class="detail">
+                            <div class="detail-icon">📅</div>
+                            <div class="detail-content">
+                                <h4>Launch Date</h4>
+                                <p>August 28, 2025</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">🛍️</div>
+                            <div class="detail-content">
+                                <h4>Available On</h4>
+                                <p>Lazada (Primary Launch Partner)</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">💎</div>
+                            <div class="detail-content">
+                                <h4>Special Features</h4>
+                                <p>Limited edition pins, exclusive packaging</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">🎯</div>
+                            <div class="detail-content">
+                                <h4>Collection Size</h4>
+                                <p>12 unique characters + secret variants</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="release-countdown">
+                        <h4>Countdown to Launch</h4>
+                        <div class="countdown-timer" id="countdownTimer">
+                            <div class="time-unit">
+                                <span class="time-value" id="days">000</span>
+                                <span class="time-label">Days</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-value" id="hours">00</span>
+                                <span class="time-label">Hours</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-value" id="minutes">00</span>
+                                <span class="time-label">Minutes</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-value" id="seconds">00</span>
+                                <span class="time-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="release-visual">
+                    <div class="preview-grid">
+                        <div class="preview-item">🧸💕</div>
+                        <div class="preview-item">🌟💖</div>
+                        <div class="preview-item">🎀✨</div>
+                        <div class="preview-item">🌙💜</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="release-timeline">
+                <h3>Release Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Design Phase Complete</h4>
+                            <p>All character designs finalized and approved</p>
+                            <span class="timeline-date">March 2025</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Production Started</h4>
+                            <p>Manufacturing of the first batch commenced</p>
+                            <span class="timeline-date">May 2025</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item active">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Pre-order Phase</h4>
+                            <p>Early bird pre-orders available with exclusive bonuses</p>
+                            <span class="timeline-date">July 2025</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Official Launch</h4>
+                            <p>Full collection available on Lazada</p>
+                            <span class="timeline-date">August 28, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebrity Section -->
+    <section id="celebrities" class="celebrities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Celebrity Labubu Lovers</h2>
+                <p class="section-subtitle">See how your favorite stars have fallen in love with Mini Labubu</p>
+            </div>
+
+            <div class="celebrities-grid">
+                <div class="celebrity-card">
+                    <div class="celebrity-avatar">👑</div>
+                    <h3 class="celebrity-name">Lisa (BLACKPINK)</h3>
+                    <p class="celebrity-quote">"Mini Labubu dolls are absolutely adorable! I collect them and they bring so much joy to my day."</p>
+                    <div class="celebrity-social">
+                        <span class="social-platform">@lalalalisa_m</span>
+                        <span class="social-followers">101M followers</span>
+                    </div>
+                </div>
+
+                <div class="celebrity-card">
+                    <div class="celebrity-avatar">💎</div>
+                    <h3 class="celebrity-name">Rihanna</h3>
+                    <p class="celebrity-quote">"These little monsters are too cute! Perfect collectibles that add magic to any space."</p>
+                    <div class="celebrity-social">
+                        <span class="social-platform">@rihanna</span>
+                        <span class="social-followers">151M followers</span>
+                    </div>
+                </div>
+
+                <div class="celebrity-card">
+                    <div class="celebrity-avatar">🌟</div>
+                    <h3 class="celebrity-name">Dua Lipa</h3>
+                    <p class="celebrity-quote">"I'm obsessed with Mini Labubu! Each one has such unique personality and charm."</p>
+                    <div class="celebrity-social">
+                        <span class="social-platform">@dualipa</span>
+                        <span class="social-followers">89M followers</span>
+                    </div>
+                </div>
+
+                <div class="celebrity-card">
+                    <div class="celebrity-avatar">⚽</div>
+                    <h3 class="celebrity-name">David Beckham</h3>
+                    <p class="celebrity-quote">"My kids introduced me to Labubu, and now I'm a collector too! These dolls are incredibly well-made."</p>
+                    <div class="celebrity-social">
+                        <span class="social-platform">@davidbeckham</span>
+                        <span class="social-followers">78M followers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="celebrity-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50M+</div>
+                    <div class="stat-label">Celebrity Social Reach</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Celebrity Posts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buying Guide -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Get Your Mini Labubu</h2>
+                <p class="section-subtitle">Follow these simple steps to start your Mini Labubu collection</p>
+            </div>
+
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Platform</h3>
+                        <p>Visit Lazada on August 28, 2025, for the official launch of "The Monsters Pin for Love Series"</p>
+                        <div class="step-links">
+                            <a href="https://lazada.com" class="step-link" target="_blank">Visit Lazada</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Select Your Collection</h3>
+                        <p>Choose between individual dolls ($18.90), 3-packs ($52.90), or the complete collection ($264.60)</p>
+                        <div class="step-options">
+                            <span class="option">🧸 Individual</span>
+                            <span class="option">📦 3-Pack</span>
+                            <span class="option">🏆 Complete Set</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Add to Cart & Checkout</h3>
+                        <p>Secure checkout with multiple payment options. Free shipping on orders over $50</p>
+                        <div class="step-features">
+                            <span class="feature">💳 Secure payment</span>
+                            <span class="feature">🚚 Fast shipping</span>
+                            <span class="feature">📞 24/7 support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Enjoy Your Collection</h3>
+                        <p>Unbox your Mini Labubu dolls and discover which characters you've received. Share your collection online!</p>
+                        <div class="step-socials">
+                            <span class="social">#MiniLabubu</span>
+                            <span class="social">#LabububCollection</span>
+                            <span class="social">#PopMart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-tips">
+                <h3>Collector Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip">
+                        <div class="tip-icon">🎯</div>
+                        <h4>Start Small</h4>
+                        <p>Begin with individual dolls to discover your favorite characters before investing in larger sets</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">📱</div>
+                        <h4>Follow Social Media</h4>
+                        <p>Stay updated on new releases and exclusive drops by following official Labubu accounts</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">🤝</div>
+                        <h4>Join Communities</h4>
+                        <p>Connect with other collectors to trade duplicates and share collection photos</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">🏷️</div>
+                        <h4>Check Authenticity</h4>
+                        <p>Always buy from authorized retailers to ensure you receive genuine Mini Labubu products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Mini Labubu</span>
+                        <span class="logo-emoji">🧸</span>
+                    </div>
+                    <p class="footer-description">
+                        Welcome to the magical world of Mini Labubu collectible charm dolls. 
+                        Join millions of collectors worldwide in discovering these adorable creatures.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎵</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="#releases">Releases</a></li>
+                        <li><a href="#guide">Buying Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 minilabubu.pro. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <!-- Load critical JavaScript -->
+    <script src="critical.js"></script>
+    
+    <!-- Load non-critical JavaScript asynchronously -->
+    <script>
+        // Load non-critical JS asynchronously after page load
+        window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = 'non-critical.js';
+            script.async = true;
+            document.head.appendChild(script);
+        });
+        
+        // Load styles.css asynchronously
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'styles.css';
+        link.media = 'print';
+        link.onload = function() { this.media = 'all'; };
+        document.head.appendChild(link);
+    </script>
+</body>
+</html>

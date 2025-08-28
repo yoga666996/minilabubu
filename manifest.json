@@ -1,0 +1,24 @@
+{
+  "name": "MINI LABUBU Official Collection",
+  "short_name": "MINI LABUBU",
+  "description": "Official LABUBU MINI collection with Heart Code series and exclusive figures",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4A6CD",
+  "theme_color": "#F4A6CD",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "minilabubu.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "minilabubu.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "en"
+}

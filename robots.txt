@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://labubumini.org/sitemap.xml
+
+# Block access to sensitive files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.json$
+
+# Allow crawling of images and CSS/JS files
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Additional rules for Labubu Mini content
+Allow: /new/
+Allow: /figures/
+Allow: /series/
+Allow: /blog/
+Allow: /other-worlds/
